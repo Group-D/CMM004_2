@@ -26,7 +26,7 @@
         <ul class="moveright"><li><a href="B&Bregistration.html">Help</a></li>
             <li><a href="Customerinfo.html">Contact</a></li>
             <!-- <li><a href="B&Bregistration.html">Register</a></li> -->
-            <li><a href="OwnerRegistration.html">Sign In</a></li>
+            <li><a href="OwnerRegistration.html">Owner's Page</a></li>
             <li><a href="Home.php">Search</a></li>
 
 
