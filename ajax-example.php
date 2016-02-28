@@ -17,11 +17,18 @@ $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 try{
   $st = $conn-> query("SELECT * FROM [Owner] WHERE [email] = '".$email."'");
 
+    $count;
 foreach($st->fetchAll() as $row) {
 
-        echo "emails matching your search ".$row[email];
+    $count++;
+
+        //echo "emails matching your search ".$row[email];
 
 }
+    if($count>0){
+        echo "you're already a member, pal";
+    }
+    else{echo "aye, nae bither, we're game here";}
 
 }
 catch(PDOException $e)
