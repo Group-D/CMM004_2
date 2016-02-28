@@ -213,8 +213,11 @@ nav{
     font-family: 'Open Sans', sans-serif;
     font-size: 8px;
     color: white;
+}
 
+.resultdisplay{
+    float: left;
 
-
-
+    border-style: solid;
+    border-color: darkslategrey;
 }
