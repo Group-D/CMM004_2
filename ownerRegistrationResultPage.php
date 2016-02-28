@@ -94,10 +94,10 @@ try{
     foreach($st->fetchAll() as $row) {
         $newhtml =
             <<<NEWHTML
-            <tr><td>
-                    <p>{$row[firstname]} {$row[surname]}</p>
-            <br>
-            </td></tr>
+            <tr>
+                   <td>{$row[firstname]}</td>
+                    <td>{$row[surname]}</td>
+            </tr>
 NEWHTML;
         print($newhtml);
     }
