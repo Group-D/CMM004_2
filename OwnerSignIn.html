@@ -84,7 +84,7 @@ theB&Bhub.com
                     var ajaxDisplay = document.getElementById('ajaxDiv');
                         if(ajaxRequest.responseText == "aye, game"){
                             $_SESSION["user"] = ""+ajaxDisplay.getElementById('email').value;
-                            header("Location:home.php");
+                            header("Location:Home.php");
                             exit();
                         }
                         ajaxDisplay.innerHTML = ajaxRequest.responseText;
