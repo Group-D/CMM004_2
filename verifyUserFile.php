@@ -20,7 +20,7 @@ try{
 
 }
 catch(PDOException $e)
-{print"$e";}
+{echo "$e";}
 
 
 ?>
