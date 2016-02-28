@@ -6,8 +6,11 @@
  * Time: 15:14
  */
 
+$age = $_GET['age'];
+$sex = $_GET['sex'];
+$wpm = $_GET['wpm'];
 
-echo "Query: ";
+echo "Query: ".$age." ".$sex." ".$wpm;
 
 
 ?>
