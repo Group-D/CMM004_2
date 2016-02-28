@@ -45,7 +45,7 @@
 <main>
 
 
-    <form action="Results.php" method="post">
+    <form action="searchResultsPage.php" method="post">
 
         <table class="table1">
             <tr><td colspan="2">Search:</td></tr>
@@ -132,7 +132,7 @@ NEWHTML;
             <tr>
 
             <td></td>
-                <td><a href="Results.php"><p align="right" ><input id="submit" type="submit" value="Submit" class="submit" /></p></a></td>
+                <td><a href="searchResultsPage.php"><p align="right" ><input id="submit" type="submit" value="Submit" class="submit" /></p></a></td>
             </tr>
 
 

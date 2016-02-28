@@ -25,7 +25,7 @@
 
 <main>
 
-    <form action="Results.php" method="post">
+    <form action="searchResultsPage.php" method="post">
 
         <table>
             <tr><td> <p>Please complete the form:</p></td></tr>
@@ -110,7 +110,7 @@ NEWHTML;
 
 
 
-                <td><a href="Results.php">
+                <td><a href="searchResultsPage.php">
                     <input type="submit" value="Submit" />
                 </a></td>
             </tr>
