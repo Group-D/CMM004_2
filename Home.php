@@ -1,3 +1,12 @@
+<?php
+session_start();
+if($_SESSION["user"] != null){
+    echo "<p>hiya" + $_SESSION['user'] + "</p>";
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

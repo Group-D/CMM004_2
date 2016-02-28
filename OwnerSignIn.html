@@ -1,3 +1,8 @@
+<?php
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,6 +82,11 @@ theB&Bhub.com
             ajaxRequest.onreadystatechange = function(){
                 if(ajaxRequest.readyState == 4){
                     var ajaxDisplay = document.getElementById('ajaxDiv');
+                        if(ajaxRequest.responseText == "aye, game"){
+                            $_SESSION["user"] = ""+ajaxDisplay.getElementById('email').value;
+                            header("Location:home.php");
+                            exit();
+                        }
                         ajaxDisplay.innerHTML = ajaxRequest.responseText;
                 }
             }
