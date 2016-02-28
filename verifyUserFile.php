@@ -18,9 +18,6 @@ try{
 
     }
 
-    //foreach($st->fetchAll() as $row) {
-
-
 }
 catch(PDOException $e)
 {print"$e";}

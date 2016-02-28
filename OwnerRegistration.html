@@ -81,7 +81,7 @@ theB&Bhub.com
 
     <!--onsubmit="return validateOwner(this);"  javascript method-->
 <div class="">
-<form onSubmit="verifyUser(email.value)" id="form">
+<form id="form">
 
         <table class="table1">
             <tr><td colspan="2">Owner's Page</td></tr>
@@ -96,7 +96,7 @@ theB&Bhub.com
                 <td>    <input type="password" class="inputform" id="password" name="password" placeholder="enter password" required>
                 </td>
             </tr>
-            <tr><td></td><td><Button>Sign In</Button></td></tr>
+            <tr><td></td><td><Button onClick="verifyUser(email.value)">Sign In</Button></td></tr>
 
         </table></form>
     <div id="warning" style="color: #ff0006;"></div>
