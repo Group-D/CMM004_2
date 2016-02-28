@@ -85,6 +85,7 @@ try {
 
 ?>
 
+<table>
 <?php
 $conn = new PDO ( "sqlsrv:server = tcp:bbsqldb.database.windows.net,1433; Database = SQL_BB", "teamdsqldb", "Sql20022016*");
 $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
@@ -93,10 +94,10 @@ try{
     foreach($st->fetchAll() as $row) {
         $newhtml =
             <<<NEWHTML
-<div class="resultdisplay">
+            <tr><td>
                     <p>{$row[firstname]} {$row[surname]}</p>
             <br>
-            </div>
+            </td></tr>
 NEWHTML;
         print($newhtml);
     }
@@ -104,7 +105,7 @@ NEWHTML;
 catch(PDOException $e)
 {print"$e";}
 ?>
-
+</table>
 
 </main>
 
