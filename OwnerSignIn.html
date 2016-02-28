@@ -82,12 +82,12 @@ theB&Bhub.com
             ajaxRequest.onreadystatechange = function(){
                 if(ajaxRequest.readyState == 4){
                     var ajaxDisplay = document.getElementById('ajaxDiv');
-                        if(ajaxRequest.responseText.equals("yes")){
-                            $_SESSION["user"] = ""+ajaxDisplay.getElementById('email').value;
-                            window.location.assign("http://www.w3schools.com");
+                  //      if(ajaxRequest.responseText.equals("yes")){
+                      //      $_SESSION["user"] = ""+ajaxDisplay.getElementById('email').value;
+                       //     window.location.assign("http://www.w3schools.com");
 
-                            ajaxDisplay.innerHTML = ajaxRequest.responseText;
-                        }
+                          //  ajaxDisplay.innerHTML = ajaxRequest.responseText;
+                        //}
                         ajaxDisplay.innerHTML = ajaxRequest.responseText;
                 }
             };
