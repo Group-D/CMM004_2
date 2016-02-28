@@ -86,6 +86,7 @@ theB&Bhub.com
                             $_SESSION["user"] = ""+ajaxDisplay.getElementById('email').value;
                             window.location.assign("http://bbhubapp.azurewebsites.net/Home.php");
 
+                            ajaxDisplay.innerHTML = ajaxRequest.responseText;
                         }
                         ajaxDisplay.innerHTML = ajaxRequest.responseText;
                 }
