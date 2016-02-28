@@ -78,8 +78,8 @@ theB&Bhub.com
                 if(ajaxRequest.readyState == 4){
                     var ajaxDisplay = document.getElementById('ajaxDiv');
                     if(ajaxRequest.responseText == "dinna recognise yer email, son") {
-                        ajaxDisplay.innerHTML = ajaxRequest.responseText;
-                        ajaxDisplay.innerHTML = "<input id='register' onclick='' type='button'>Register</>";
+
+                        ajaxDisplay.innerHTML = ajaxRequest.responseText+"<br><input id='register' onclick='' type='button' value='Register'></>";
                     }else{ajaxDisplay.innerHTML = ajaxRequest.responseText;}
                 }
             }
