@@ -22,13 +22,13 @@ foreach($st->fetchAll() as $row) {
 
     $count++;
 
-        //echo "emails matching your search ".$row[email];
+        echo "search ".$count;
 
 }
     if($count>0){
-        echo "you're already a member, pal";
+        echo "aye, game";
     }
-    else{echo "aye, nae bither, we're game here";}
+    else{echo "we dinna recognise yer email, son";}
 
 }
 catch(PDOException $e)
