@@ -15,7 +15,7 @@ try{
     foreach($st->fetchAll() as $row) {
 
         echo "emails matching your search ".$row[email];
-
+        print("emails matching your search ".$row[email]);
     }
 
 }
