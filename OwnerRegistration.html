@@ -44,12 +44,47 @@ theB&Bhub.com
 
 
 <main>
+
+
+
+
+    <script>
+        function verifyUser(str) {
+            if (str == "") {
+                document.getElementById("txtHint").innerHTML = "";
+                return;
+            } else {
+                if (window.XMLHttpRequest) {
+                    // code for IE7+, Firefox, Chrome, Opera, Safari
+                    xmlhttp = new XMLHttpRequest();
+                } else {
+                    // code for IE6, IE5
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.onreadystatechange = function() {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        document.getElementById("warning").innerHTML = xmlhttp.responseText;
+                    }
+                };
+                xmlhttp.open("GET","verifyUserFile.php?email="+str,true);
+                xmlhttp.send();
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
     <!--onsubmit="return validateOwner(this);"  javascript method-->
 <div class="">
-<form action="ownerRegistrationResultPage.php" method="post" id="form">
+<form onSubmit="verifyUser(email.value)" method="post" id="form">
 
         <table class="table1">
-            <tr><td colspan="2">Owner Sign In</td></tr>
+            <tr><td colspan="2">Owner's Page</td></tr>
             <tr><td class="small">* Required Fields</td></tr>
 
                         <tr><td>
@@ -64,6 +99,7 @@ theB&Bhub.com
             <tr><td></td><td><Button>Sign In</Button></td></tr>
 
         </table></form>
+    <p id="warning" style="color: #ff0006;">SORRY! USER NOT RECOGNISED</p>
 </div>
 
     <div class="right2">
