@@ -22,13 +22,12 @@ foreach($st->fetchAll() as $row) {
 
     $count++;
 
-        echo "search ".$count;
 
 }
     if($count>0){
         echo "aye, game";
     }
-    else{echo "we dinna recognise yer email, son";}
+    else{echo "dinna recognise yer email, son";}
 
 }
 catch(PDOException $e)
