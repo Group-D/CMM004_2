@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Owner Registration Page</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<header>
+    <div class="right">
+theB&Bhub.com
+</div>
+</header>
+
+<div class="nav">
+
+    <nav>
+
+
+
+        <ul class="moveright"><li><a href="B&Bregistration.html">Help</a></li>
+            <li><a href="Customerinfo.html">Contact</a></li>
+            <!-- <li><a href="B&Bregistration.html">Register</a></li> -->
+            <li><a href="OwnerSignIn.html">Owner's Page</a></li>
+            <li><a href="Home.php">Search</a></li>
+
+
+
+        </ul>
+
+    </nav>
+
+
+
+
+</div>
+<hr width="100%" align="left" size="1" color="#d3d3d3">
+<body>
+
+
+<main>
+
+
+    <script language = "javascript" type = "text/javascript">
+        <!--
+        //Browser Support Code
+        function ajaxFunction(){
+            var ajaxRequest;  // The variable that makes Ajax possible!
+
+            try {
+                // Opera 8.0+, Firefox, Safari
+                ajaxRequest = new XMLHttpRequest();
+            }catch (e) {
+                // Internet Explorer Browsers
+                try {
+                    ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
+                }catch (e) {
+                    try{
+                        ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+                    }catch (e){
+                        // Something went wrong
+                        alert("Your browsers no working!");
+                        return false;
+                    }
+                }
+            }
+
+            // Create a function that will receive data
+            // sent from the server and will update
+            // div section in the same page.
+
+            ajaxRequest.onreadystatechange = function(){
+                if(ajaxRequest.readyState == 4){
+                    var ajaxDisplay = document.getElementById('ajaxDiv');
+                        ajaxDisplay.innerHTML = ajaxRequest.responseText;
+                }
+            }
+
+            // Now get the value from user and pass it to
+            // server script.
+
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            var queryString = "?email=" + email ;
+            queryString +=  "&password=" + password;
+
+            ajaxRequest.open("GET", "ajax-example.php" + queryString, true);
+            ajaxRequest.send(null);
+        }
+        //-->
+    </script>
+
+    <form class="table1" name = 'myForm' action= 'OwnerRegistration.html' method="GET">
+<table>
+            <tr><td colspan="2">Owner's Page</td></tr>
+
+            <tr><td class="small">* Required Fields</td></tr>
+
+            <tr><td>
+                <label for="email">Email: *</label></td>
+                <td><input type="text" class="inputform" id="email" name="email" placeholder="email" size="30" maxlength="50" required /></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password: *</label></td>
+                <td>    <input type="password" class="inputform" id="password" name="password" placeholder="enter password" required>
+                </td>
+            </tr>
+
+    <tr><td></td><td><input type = 'button' onclick = 'ajaxFunction()' value = 'Sign In'/></td></tr>
+    <tr><td></td><td><input type = 'submit' value = 'Register'/></td></tr>
+
+    <tr><td colspan="2"><div style="color: #ff0006" id = 'ajaxDiv'></div></td></tr>
+
+</table>
+            </form>
+
+
+
+    <div class="right2">
+
+
+            <table class="table2">
+                <tr><td colspan="2"><p>Message Board - advertisements - user info</p></td></tr>
+                <tr class="tr2"><td class="t2"><p>row 1</p></td></tr>
+                <tr class="tr2"><td class="t2"><p>row 2</p></td></tr>
+                <tr class="tr2"><td class="t2"><p>row 3</p></td></tr>
+                <tr class="tr2"><td class="t2"><p>row 4</p></td></tr>
+                <tr class="tr2"><td class="t2"><p>row 5</p></td></tr>
+                <tr class="tr2"><td class="t2"><p>row 6</p></td></tr>
+                <tr class="tr2"><td class="t2"><p>row 7</p></td></tr>
+                <tr class="tr2"><td class="t2"><p>row 8</p></td></tr>
+                <tr class="tr2"><td class="t2"><p>row 9</p></td></tr>
+
+
+
+
+
+
+
+            </table>
+    </div>
+
+    <hr width="100%" align="left" size="1" color="#2f4f4f">
+
+
+</main>
+<div class="foot">
+<footer>
+
+    <p>Copyright. Team D Solutions.</p>
+</footer></div>
+</body>
+</html>
