@@ -15,12 +15,12 @@ try{
     if($num_rows = mysql_num_rows($st) > 0) {
 
 
-        echo "as there are ".$num_rows." - you are already a user?";
+        echo "<p>as there are ".$num_rows." - you are already a user?</p>";
 
 
     }
     else{
-        echo "as there are ".$num_rows." - aye, keep gawn";
+        echo "<p>as there are ".$num_rows." - aye, keep gawn</p>";
         }
 
     //foreach($st->fetchAll() as $row) {
