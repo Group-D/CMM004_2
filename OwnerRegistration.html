@@ -84,31 +84,36 @@ theB&Bhub.com
             // Now get the value from user and pass it to
             // server script.
 
-            var age = document.getElementById('age').value;
-            var wpm = document.getElementById('wpm').value;
-            var sex = document.getElementById('sex').value;
-            var queryString = "?age=" + age ;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
 
-            queryString +=  "&wpm=" + wpm + "&sex=" + sex;
+            var queryString = "?email=" + email ;
+            queryString +=  "&password=" + password;
+
             ajaxRequest.open("GET", "ajax-example.php" + queryString, true);
             ajaxRequest.send(null);
         }
         //-->
     </script>
 
-    <form name = 'myForm'>
-        Max Age: <input type = 'text' id = 'age' /> <br />
-        Max WPM: <input type = 'text' id = 'wpm' />
-        <br />
+    <form class="table1" name = 'myForm'>
 
-        Sex: <select id = 'sex'>
-        <option value = "m">m</option>
-        <option value = "f">f</option>
-    </select>
+            <tr><td colspan="2">Owner's Page</td></tr>
+            <tr><td class="small">* Required Fields</td></tr>
 
-        <input type = 'button' onclick = 'ajaxFunction()' value = 'Query MySQL'/>
+            <tr><td>
+                <label for="email">Email: *</label></td>
+                <td><input type="text" class="inputform" id="email" name="email" placeholder="email" size="30" maxlength="50" required /></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password: *</label></td>
+                <td>    <input type="password" class="inputform" id="password" name="password" placeholder="enter password" required>
+                </td>
+            </tr>
 
-    </form>
+            <input type = 'button' onclick = 'ajaxFunction()' value = 'Query MySQL'/>
+
+            </form>
 
     <div id = 'ajaxDiv'>Your result will display here</div>
 
