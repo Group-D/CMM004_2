@@ -82,12 +82,10 @@ theB&Bhub.com
             ajaxRequest.onreadystatechange = function(){
                 if(ajaxRequest.readyState == 4){
                     var ajaxDisplay = document.getElementById('ajaxDiv');
-                        if(ajaxRequest.responseText =="yes"){
+                       // if(ajaxRequest.responseText =="yes"){
 
-
-                           ajaxDisplay.innerHTML = ajaxRequest.responseText;
-                        functionRedirect();
-                        }
+                    //       ajaxDisplay.innerHTML = ajaxRequest.responseText;
+                    //    }
                         ajaxDisplay.innerHTML = ajaxRequest.responseText;
                 }
             };
@@ -103,13 +101,6 @@ theB&Bhub.com
 
             ajaxRequest.open("GET", "ajax-example.php" + queryString, true);
             ajaxRequest.send(null);
-
-
-            function functionRedirect(){
-                if(document.getElementById('warning') == 'success'){
-                    window.location.assign("http://www.w3schools.com");
-                }
-            }
 
 
         }
