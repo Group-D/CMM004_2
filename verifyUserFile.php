@@ -2,7 +2,7 @@
 <?php
 
 
-$email= intval($_GET['email']);
+$email= $_GET['email'];
 echo "email";
 
 //$conn = new PDO ( "sqlsrv:server = tcp:bbsqldb.database.windows.net,1433; Database = SQL_BB", "teamdsqldb", "Sql20022016*");
