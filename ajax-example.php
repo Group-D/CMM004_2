@@ -31,7 +31,7 @@ foreach($st->fetchAll() as $row) {
 }
     if($count>0){
         //$_SESSION["user"] = $name;
-        echo "success!";
+        echo "success!  <a href='http://www.w3schools.com'>Visit W3Schools</a> ";
     }
     else{echo "dinna recognise yer email, son";}
 
