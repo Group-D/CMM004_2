@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
 
 <?php
 
@@ -25,5 +22,4 @@ echo "email";
 
 
 ?>
-</body>
-</html>
+
