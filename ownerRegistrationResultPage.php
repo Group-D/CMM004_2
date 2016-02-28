@@ -94,8 +94,7 @@ try{
         $newhtml =
             <<<NEWHTML
 <div class="resultdisplay">
-                    <p>{$row[firstname]}</p>
-                    <p>{$row[surname]}</p>
+                    <p>{$row[firstname]} {$row[surname]}</p>
             <br>
             </div>
 NEWHTML;
