@@ -1,4 +1,6 @@
 <?php
+
+session_start();
 /**
  * Created by PhpStorm.
  * User: Borris
@@ -17,15 +19,18 @@ $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 try{
   $st = $conn-> query("SELECT * FROM [Owner] WHERE [email] = '".$email."'");
 
+    $name = "";
+
     $count;
 foreach($st->fetchAll() as $row) {
 
     $count++;
 
+    $row[firstname];
 
 }
     if($count>0){
-        echo "yes";
+        $_SESSION["user"] = $name;
     }
     else{echo "dinna recognise yer email, son";}
 
