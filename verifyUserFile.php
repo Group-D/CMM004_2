@@ -8,7 +8,7 @@
 $email= intval($_GET['emails']);
 
 if($email == ""){
-    echo "<p>error</p>";
+    echo "<p>error</p>";//
 }
 
 $conn = new PDO ( "sqlsrv:server = tcp:bbsqldb.database.windows.net,1433; Database = SQL_BB", "teamdsqldb", "Sql20022016*");
