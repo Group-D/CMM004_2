@@ -84,9 +84,9 @@ theB&Bhub.com
                     var ajaxDisplay = document.getElementById('ajaxDiv');
                         if(ajaxRequest.responseText =="yes"){
 
-                            window.location.assign("http://www.w3schools.com");
 
                            ajaxDisplay.innerHTML = ajaxRequest.responseText;
+                        functionRedirect();
                         }
                         ajaxDisplay.innerHTML = ajaxRequest.responseText;
                 }
@@ -103,6 +103,15 @@ theB&Bhub.com
 
             ajaxRequest.open("GET", "ajax-example.php" + queryString, true);
             ajaxRequest.send(null);
+
+
+            function functionRedirect(){
+                if(document.getElementById('warning') == 'success'){
+                    window.location.assign("http://www.w3schools.com");
+                }
+            }
+
+
         }
         //-->
     </script>

@@ -31,6 +31,7 @@ foreach($st->fetchAll() as $row) {
 }
     if($count>0){
         $_SESSION["user"] = $name;
+        echo "success!";
     }
     else{echo "dinna recognise yer email, son";}
 
