@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Bookings Page</title>
-    <link type="text/css" rel="stylesheet" href="../../Desktop/HubBB-master(1)/HubBB-master/assets/css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 </head>
 
@@ -33,7 +33,7 @@
             <tr>
                 <td>
                     <label for="location">Pick a location:</label></td>
-                <td><select name="location">
+                <td><select id="location" name="location">
 
                         <?php
                         $conn = new PDO ( "sqlsrv:server = tcp:bbsqldb.database.windows.net,1433; Database = SQL_BB", "teamdsqldb", "Sql20022016*");
@@ -62,7 +62,7 @@ NEWHTML;
             <tr>
                 <td>
                     <label for="date">Pick a date:</label></td>
-                <td><select name="date">
+                <td><select id="date" name="date">
                     <option value="">Select a date:</option>
                     <option value="01/04/2016">01/04/2016</option>
                     <option value="02/04/2016">02/04/2016</option>
@@ -73,7 +73,7 @@ NEWHTML;
             </tr>
             <tr><td>
                 <label for="duration">Number of Days:</label></td>
-                <td><select name="numberofdays">
+                <td><select id="duration" name="duration">
                     <option value="">Select Number of Days:</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -84,8 +84,8 @@ NEWHTML;
             </tr>
 
             <tr><td>
-                <label for="duration">Number of Adults:</label></td>
-                <td><select name="numberofadults">
+                <label for="numberofaults">Number of Adults:</label></td>
+                <td><select id="numberofadults" name="numberofadults">
                     <option value="">Select Number of Adults:</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -96,8 +96,8 @@ NEWHTML;
             </tr>
 
             <tr><td>
-                <label for="duration">Number of Children:</label></td>
-                <td><select name="numberofchildren">
+                <label for="numberofchildren">Number of Children:</label></td>
+                <td><select id="numberofchildren" name="numberofchildren">
                     <option value="">Select Number of Children:</option>
                     <option value="1">1</option>
                     <option value="2">2</option>

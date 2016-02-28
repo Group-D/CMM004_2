@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Results</title>
-    <link type="text/css" rel="stylesheet" href="../../Desktop/HubBB-master(1)/HubBB-master/assets/css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
 
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>

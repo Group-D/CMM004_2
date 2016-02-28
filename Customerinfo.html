@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Customer Info</title>
-    <link type="text/css" rel="stylesheet" href="../../Desktop/HubBB-master(1)/HubBB-master/assets/css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
 
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
@@ -51,7 +51,7 @@
             <tr><td class="small">* Required Fields</td></tr>
             <tr><td>
                     <label for="title">Title: *</label></td>
-                <td><select class="inputform" name="title">
+                <td><select class="inputform" name="title" id="title">
                         <option value="">Select Title</option>
                         <option value="Mr">Mr</option>
                         <option value="Mrs">Mrs</option>
@@ -62,16 +62,16 @@
             </tr>
             <tr>
                 <td><label for="firstname">First Name: *</label></td>
-                <td><input type="text" class="inputform" name="firstname" value="Enter your First Name" required /></td>
+                <td><input type="text" id="firstname" class="inputform" name="firstname" value="Enter your First Name" required /></td>
             </tr>
             <tr>
                 <td><label for="surname">Surname: *</label></td>
-                <td><input type="text" class="inputform" name="surname" value="Enter your Surname" required /></td>
+                <td><input type="text" id="surname" class="inputform" name="surname" value="Enter your Surname" required /></td>
             </tr>
             <tr>
                 <td>
                     <label for="email">Email: *</label></td>
-                <td><input type="text" class="inputform" name="email" placeholder="email" size="30" maxlength="50" required /></td>
+                <td><input type="text" id="email" class="inputform" name="email" placeholder="email" size="30" maxlength="50" required /></td>
             </tr>
 
 
@@ -79,18 +79,18 @@
 
             <tr><td>
                     <label for="address">Address: *</label></td>
-                <td><input type="text" class="inputform" name="address" placeholder=" Enter first line of your address" size="30" maxlength="50" required /></td>
+                <td><input type="text" id="address" class="inputform" name="address" placeholder=" Enter first line of your address" size="30" maxlength="50" required /></td>
             </tr>
 
             <tr><td>
                     <label for="address2">Address Line 2: *</label></td>
-                <td><input type="text" class="inputform" name="address2" placeholder=" Enter second line of your address" size="30" maxlength="50" required /></td>
+                <td><input type="text" id="address2" class="inputform" name="address2" placeholder=" Enter second line of your address" size="30" maxlength="50" required /></td>
             </tr>
 
 
             <tr><td>
                     <label for="telephone">Telephone: *</label></td>
-                <td><input type="text" class="inputform" name="telephone" placeholder=" Enter your telephone number" size="20" maxlength="20" required /></td>
+                <td><input type="text" id="telephone" class="inputform" name="telephone" placeholder=" Enter your telephone number" size="20" maxlength="20" required /></td>
             </tr>
 
             <tr><td></td>

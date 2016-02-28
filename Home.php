@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Search Page</title>
-    <link type="text/css" rel="stylesheet" href="../../Desktop/HubBB-master(1)/HubBB-master/assets/css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
 
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
@@ -85,7 +85,7 @@ NEWHTML;
             <tr>
                 <td>
                     <label for="date">Pick a date:</label></td>
-                <td><select class="inputform" name="date">
+                <td><select id="date" class="inputform" name="date">
                     <option value="">Select a date:</option>
                     <option value="01/04/2016">01/04/2016</option>
                     <option value="02/04/2016">02/04/2016</option>
@@ -96,7 +96,7 @@ NEWHTML;
             </tr>
             <tr><td>
                 <label for="duration">Number of Days:</label></td>
-                <td><select class="inputform" name="numberofdays">
+                <td><select class="inputform" id="duration" name="numberofdays">
                     <option value="">Select Number of Days:</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -107,8 +107,8 @@ NEWHTML;
             </tr>
 
             <tr><td>
-                <label for="duration">Number of Adults:</label></td>
-                <td><select class="inputform" name="numberofadults">
+                <label for="numberofadults">Number of Adults:</label></td>
+                <td><select class="inputform" id="numberofadults" name="numberofadults">
                     <option value="">Select Number of Adults:</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -119,8 +119,8 @@ NEWHTML;
             </tr>
 
             <tr><td>
-                <label for="duration">Number of Children:</label></td>
-                <td><select class="inputform" name="numberofchildren">
+                <label for="numberofchildren">Number of Children:</label></td>
+                <td><select class="inputform" id="numberofchildren" name="numberofchildren">
                     <option value="">Select Number of Children:</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
