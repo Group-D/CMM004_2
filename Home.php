@@ -1,8 +1,5 @@
 <?php
 session_start();
-if($_SESSION["user"] != null){
-    echo "<p>hiya" + $_SESSION['user'] + "</p>";
-}
 
 ?>
 
@@ -53,7 +50,11 @@ if($_SESSION["user"] != null){
 
 <main>
 
-
+    <?php
+    if($_SESSION["user"] != null){
+    echo "<p>hiya" + $_SESSION['user'] + "</p>";
+    }
+?>
     <form action="searchResultsPage.php" method="post">
 
         <table class="table1">
