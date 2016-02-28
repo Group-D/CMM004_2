@@ -5,7 +5,7 @@
 <?php
 
 
-$email= intval($_REQUEST['email']);
+$email= intval($_GET['emails']);
 
 if($email == ""){
 }
