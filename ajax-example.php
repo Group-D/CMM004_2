@@ -6,11 +6,10 @@
  * Time: 15:14
  */
 
-$age = $_GET['age'];
-$sex = $_GET['sex'];
-$wpm = $_GET['wpm'];
+$email = $_GET['email'];
+$password = $_GET['password'];
 
-echo "Query: ".$age." ".$sex." ".$wpm;
+echo "Query: ".$email." ".$password;
 
 
 ?>
