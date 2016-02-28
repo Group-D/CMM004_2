@@ -25,7 +25,7 @@ foreach($st->fetchAll() as $row) {
 
 }
     if($count>0){
-        echo "aye, game";
+        echo "yes";
     }
     else{echo "dinna recognise yer email, son";}
 
