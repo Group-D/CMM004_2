@@ -84,13 +84,13 @@ theB&Bhub.com
                     var ajaxDisplay = document.getElementById('ajaxDiv');
                         if(ajaxRequest.responseText.equals("yes")){
                             $_SESSION["user"] = ""+ajaxDisplay.getElementById('email').value;
-                            window.location.assign("http://bbhubapp.azurewebsites.net/Home.php");
+                            window.location.assign("http://www.w3schools.com");
 
                             ajaxDisplay.innerHTML = ajaxRequest.responseText;
                         }
                         ajaxDisplay.innerHTML = ajaxRequest.responseText;
                 }
-            }
+            };
 
             // Now get the value from user and pass it to
             // server script.
