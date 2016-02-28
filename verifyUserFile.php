@@ -8,28 +8,36 @@
 $email= intval($_GET['email']);
 
 if($email == ""){
-    echo "<p>empty</p>";
 }
 
 $conn = new PDO ( "sqlsrv:server = tcp:bbsqldb.database.windows.net,1433; Database = SQL_BB", "teamdsqldb", "Sql20022016*");
 $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-try{
-    $st = $conn-> query("SELECT * FROM [Owner] WHERE [email] = '".$email."'");
+try {
+    $st = $conn->query("SELECT * FROM [Owner] WHERE [email] = '" . $email . "'");
 
-    if($num_rows = mysql_num_rows($st) > 0) {
+    if ($num_rows = mysql_num_rows($st) > 0) {
+
+        $newhtml =
+            <<<NEWHTML
+
+           <p>as there are ".$num_rows." - you are already a user?</p>
+
+NEWHTML;
 
 
-        echo "<p>as there are ".$num_rows." - you are already a user?</p>";
+    } else {
+        $newhtml =
+            <<<NEWHTML
 
+           <p>as there are ".$num_rows." - aye, keep gawn</p>
+
+NEWHTML;
+
+
+        //foreach($st->fetchAll() as $row) {
+        print($newhtml);
 
     }
-    else{
-        echo "<p>as there are ".$num_rows." - aye, keep gawn</p>";
-        }
-
-    //foreach($st->fetchAll() as $row) {
-
-
 }
 catch(PDOException $e)
 {print"$e";}
