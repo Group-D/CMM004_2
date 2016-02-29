@@ -32,7 +32,7 @@ foreach($st->fetchAll() as $row) {
         echo "success!";
 //<a href='Home.php'>Continue</a>
     }
-    else{echo "<p>username or password is wrong</p>";}
+    else{echo "username or password is wrong";}
 
 }
 catch(PDOException $e)

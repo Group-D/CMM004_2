@@ -92,7 +92,7 @@ theB&Bhub.com
 
 
     <!-- The result of the search will be rendered inside this div -->
-    <tr><td><div id="result" style="color: #ff0006"></div></td></tr>
+    <tr><td><p id="result" style="color: #ff0006"></p></td></tr>
 </table>
             </form>
 
