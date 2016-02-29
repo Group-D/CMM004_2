@@ -85,7 +85,7 @@ theB&Bhub.com
             </tr>
 
     <tr><td></td><td><input id="submit" type="button" value="Sign In"></td></tr>
-    <form class="table1" id="myForm" name = "myForm" action="OwnerRegistration.html" method="POST">
+    <form class="table1" id="myForm" name = "myForm" action="OwnerRegistration.html" >
     <tr><td></td><td><input type = 'submit' value = 'Register'/></td></tr>
 
 
