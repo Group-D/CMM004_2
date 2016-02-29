@@ -69,7 +69,7 @@ theB&Bhub.com
 <main>
 
 
-    <form class="table1" id="myForm" name = "myForm" action="http://bbhubapp.azurewebsites.net/Home.php" method="POST">
+    <form class="table1" id="myForm" name = "myForm" action="http://bbhubapp.azurewebsites.net/OwnerRegistration.html" method="POST">
 <table>
             <tr><td colspan="2">Owner's Page</td></tr>
 
@@ -86,7 +86,7 @@ theB&Bhub.com
             </tr>
 
     <tr><td></td><td><input id="submit" type="button" value="Sign In"></td></tr>
-    <tr><td></td><td><input type = 'submit' value = 'Register'/></td></tr>
+    <tr><td></td><td><input type = 'button' value = 'Register'/></td></tr>
 
 
 
