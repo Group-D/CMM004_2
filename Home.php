@@ -21,6 +21,11 @@ session_start();
     <div class="right">
         theB&Bhub.com
     </div>
+    <?php
+    if($_POST['user']!=null){$_SESSION["user"]=$_POST['user'];}
+    echo "<p>you are signed in as: " . $_SESSION["user"] . "</p>";
+
+    ?>
 </header>
 <body>
 <div class="nav">
@@ -49,12 +54,6 @@ session_start();
 
 
 <main>
-
-    <?php
-    if($_POST['user']!=null){$_SESSION["user"]=$_POST['user'];}
-    echo "<p>hiya" . $_SESSION["user"] . "</p>";
-
-?>
     <form action="searchResultsPage.php" method="post">
 
         <table class="table1">
