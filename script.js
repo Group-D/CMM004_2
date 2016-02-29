@@ -23,9 +23,9 @@ $(document).ready(function(){
                     $("#result").innerHtml = result;
                     }
                     else{
-                        alert("That's you signed in, chief!");
+                        alert("That's you signed in, chief");
 
-                        $.session.set("user", ""+email);
+                        //$.session.set("user", ""+email);
                         window.location.href = "http://bbhubapp.azurewebsites.net/Home.php";
                     }
 
