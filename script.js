@@ -11,7 +11,7 @@ $(document).ready(function(){
             alert("Please Fill All Fields");
         }
         else
-        {var loader = "<div class='loader'></div>";
+        {var loader = "<div id='loader' class='loader'></div>";
             $('body').append(loader);
 // AJAX Code To Submit Form.
             $.ajax({
