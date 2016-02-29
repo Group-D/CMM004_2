@@ -25,7 +25,7 @@ session_start();
     if($_POST['user']!=null){$_SESSION["user"]=$_POST['user'];}
     if($_SESSION["user"] != null){
         echo "<p>currently signed in as: " . $_SESSION["user"];
-        echo "not you?</p><button id='logout' value='LOGOUT'></button>";
+        echo "    not you?</p><button id='logout'>LOGOUT</button>";
     }
 
     ?>
