@@ -22,7 +22,7 @@ $(document).ready(function(){
                 data: dataString,
                 cache: false,
                 success: function(result){
-                    $('loader').remove();
+                    $('#loader').remove();
                     if(result!="success!"){
                     $("#result").html(result);
                     }
