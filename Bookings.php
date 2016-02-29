@@ -14,7 +14,7 @@
         <ul>
             <li><a href="Home.php">Home page</a></li>
             <li><a href="Bookings.php">Bookings</a></li>
-            <li><a href="OwnerSignIn.html">Owner Registration</a></li>
+            <li><a href="OwnerSignIn.php">Owner Registration</a></li>
             <li><a href="B&Bregistration.html">B&B Registration</a></li>
         </ul>
 
