@@ -23,9 +23,10 @@ session_start();
     <div class="right">
 theB&Bhub.com
 </div>
-<?php
+
+    <?php
     if($_SESSION["user"] != null){
-    echo "<p>currently signed in as: " . $_SESSION["user"] . "</p>";
+        echo "<p>currently signed in as: " . $_SESSION["user"] . "</p>";
     }
 
     ?>
