@@ -67,7 +67,6 @@ session_start();
 
 
 </div>
-<hr width="100%" align="left" size="1" color="#d3d3d3">
 
 
 
