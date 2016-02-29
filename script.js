@@ -23,9 +23,9 @@ $(document).ready(function(){
                     $("#result").innerHtml = result;
                     }
                     else{
-                        alert("That's you signed in, chief!");
+                        alert("That's you signed in, chief!!");
 
-                        var form = $('<form action="' + url + '" method="post">' +
+                        var form = $('<form action="' + url + '" method="POST">' +
                             '<input type="text" name="api_url" value="home.php" />' +
                             '</form>');
                         $('body').append(form);
