@@ -23,10 +23,11 @@ $(document).ready(function(){
                     $("#result").innerHtml = result;
                     }
                     else{
-                        alert("That's you signed in, chief");
+                        alert("That's you signed in, chief!");
 
+                        $("#myForm").submit();
                         //$.session.set("user", ""+email);
-                        window.location.href = "http://bbhubapp.azurewebsites.net/Home.php";
+                        //window.location.href = "http://bbhubapp.azurewebsites.net/Home.php";
                     }
 
 
