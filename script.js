@@ -22,7 +22,7 @@ $(document).ready(function(){
                 data: dataString,
                 cache: false,
                 success: function(result){
-                    $('loader').css("visibility","hidden");
+                    $('loader').cssRules("visibility","hidden");
                     if(result!="success!"){
                     $("#result").html(result);
                     }
