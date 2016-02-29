@@ -52,7 +52,7 @@ session_start();
 
     <?php
     if($_POST['user']!=null){$_SESSION["user"]=$_POST['user'];}
-    echo '<p>hiya' . $_SESSION["user"] . '</p>';
+    echo "<p>hiya" . $_SESSION["user"] . "</p>";
 
 ?>
     <form action="searchResultsPage.php" method="post">
