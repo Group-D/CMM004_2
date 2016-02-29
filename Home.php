@@ -22,13 +22,26 @@ session_start();
         theB&Bhub.com
     </div>
     <?php
-    if($_POST['user']!=null){$_SESSION["user"]=$_POST['user'];}
-    if($_SESSION["user"] != null){
-        echo "<p>currently signed in as: " . $_SESSION["user"];
-        echo "    not you?</p><button id='logout'>LOGOUT</button>";
+
+    if($_GET['value']=="logout"){
+        echo "<p id='loginText'>currently not logged in";
+    }else {
+        if ($_POST['user'] != null) {
+            $_SESSION["user"] = $_POST['user'];
+        }
+        if ($_SESSION["user"] != null) {
+            echo "<p id='loginText'>currently signed in as: " . $_SESSION["user"];
+            echo "    not you?</p><button id='logout()' onclick='logout()'>LOGOUT</button>";
+        }
     }
 
     ?>
+    <script>
+        function myFunction() {
+            window.location = "http://bbhubapp.azurewebsites.net/home.php/?value=logout";
+        }
+    </script>
+
 </header>
 <body>
 <div class="nav">
