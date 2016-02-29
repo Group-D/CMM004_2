@@ -20,7 +20,7 @@ $(document).ready(function(){
                 cache: false,
                 success: function(result){
                     if(result!="success!"){
-                    $("#result").innerHtml = result;
+                    $("#result").html(result);
                     }
                     else{
                         alert("That's you signed in, chief!!!!");
