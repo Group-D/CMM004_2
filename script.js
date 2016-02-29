@@ -21,7 +21,7 @@ $(document).ready(function(){
                     $("#result").innerHtml = result;
                     }
                     else{
-                        alert("That's you signed chief");
+                        alert("That's you signed in, chief");
                         window.location.href = "https://www.google.co.uk";
                     }
 
