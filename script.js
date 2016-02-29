@@ -26,7 +26,7 @@ $(document).ready(function(){
                         alert("That's you signed in, chief");
                         $_SESSION["user"] = $name;
                         //$.session.set("user", ""+email);
-                        window.location.href = "home.php";
+                        window.location.href = "http://bbhubapp.azurewebsites.net/Home.php";
                     }
 
 
