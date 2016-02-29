@@ -17,7 +17,15 @@ $(document).ready(function(){
                 data: dataString,
                 cache: false,
                 success: function(result){
-                    alert(result + "--from php");
+                    if(result!="success!"){
+                    $("#result").innerHtml = result;
+                    }
+                    else{
+                        alert("That's you signed chief");
+                        window.location.href = "https://www.google.co.uk";
+                    }
+
+
                 }
             });
         }
