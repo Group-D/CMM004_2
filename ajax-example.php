@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 /**
  * Created by PhpStorm.
@@ -30,7 +29,6 @@ foreach($st->fetchAll() as $row) {
 
 }
     if($count>0){
-        $_SESSION["user"] = $name;
         echo "success!";
 //<a href='Home.php'>Continue</a>
     }

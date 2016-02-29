@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
     $("#submit").click(function(){
         var email = $("#email").val();
@@ -22,6 +24,8 @@ $(document).ready(function(){
                     }
                     else{
                         alert("That's you signed in, chief");
+                        $_SESSION["user"] = $name;
+                        //$.session.set("user", ""+email);
                         window.location.href = "https://www.google.co.uk";
                     }
 
