@@ -22,11 +22,13 @@ $(document).ready(function(){
                 data: dataString,
                 cache: false,
                 success: function(result){
-                    $('#loader').remove();
+
                     if(result!="success!"){
+                        $('#loader').remove();
                     $("#result").html(result);
                     }
                     else{
+                        $('#loader').remove();
                         alert("That's you signed in, chief!");
 
                         var form = $('<form action="http://bbhubapp.azurewebsites.net/Home.php" method="POST">' +
