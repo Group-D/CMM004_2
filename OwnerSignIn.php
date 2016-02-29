@@ -69,7 +69,7 @@ theB&Bhub.com
 <main>
 
 
-   <table>
+   <table class="table1">
             <tr><td colspan="2">Owner's Page</td></tr>
 
             <tr><td class="small">* Required Fields</td></tr>
