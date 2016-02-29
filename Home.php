@@ -23,7 +23,9 @@ session_start();
     </div>
     <?php
     if($_POST['user']!=null){$_SESSION["user"]=$_POST['user'];}
-    echo "<p>you are signed in as: " . $_SESSION["user"] . "</p>";
+    if($_SESSION["user"] != null){
+        echo "<p>currently signed in as: " . $_SESSION["user"] . "</p>";
+    }
 
     ?>
 </header>

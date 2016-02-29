@@ -23,6 +23,12 @@ session_start();
     <div class="right">
 theB&Bhub.com
 </div>
+<?php
+    if($_SESSION["user"] != null){
+    echo "<p>currently signed in as: " . $_SESSION["user"] . "</p>";
+    }
+
+    ?>
 </header>
 
 <div class="nav">
