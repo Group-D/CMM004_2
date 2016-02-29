@@ -8,8 +8,8 @@ session_start();
  * Time: 15:14
  */
 
-$email = $_GET['email'];
-$password = $_GET['password'];
+$email = $_POST['email'];
+$password = $_POST['password'];
 
 //echo "Query: ".$email." ".$password;
 
