@@ -23,12 +23,14 @@ $(document).ready(function(){
                     $("#result").innerHtml = result;
                     }
                     else{
-                        alert("That's you signed in, chief!!!");
+                        alert("That's you signed in, chief!");
 
-                        var form = $('<form action="http://bbhubapp.azurewebsites.net/Home.php" method="POST">' +
-                            '<input type="text" name="user" value="'+email+'" />' +
-                            '</form>');
-                        $('body').append(form);
+                        //var form = $('<form action="http://bbhubapp.azurewebsites.net/Home.php" method="POST">' +
+                          //  '<input type="text" name="user" value="'+email+'" />' +
+                            //'</form>');
+                        //$('body').append(form);
+
+                        var form =$("#myForm");
                         form.submit();
                         //$.session.set("user", ""+email);
                         //window.location.href = "http://bbhubapp.azurewebsites.net/Home.php";
