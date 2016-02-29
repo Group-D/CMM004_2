@@ -12,6 +12,9 @@ session_start();
 
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script src="script.js"></script>
 
 
 </head>
@@ -51,66 +54,6 @@ theB&Bhub.com
 <main>
 
 
-    <script language = "javascript" type = "text/javascript">
-        <!--
-        //Browser Support Code
-        function ajaxFunction(){
-            var ajaxRequest;  // The variable that makes Ajax possible!
-
-            try {
-                // Opera 8.0+, Firefox, Safari
-                ajaxRequest = new XMLHttpRequest();
-            }catch (e) {
-                // Internet Explorer Browsers
-                try {
-                    ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
-                }catch (e) {
-                    try{
-                        ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
-                    }catch (e){
-                        // Something went wrong
-                        alert("Your browsers no working!");
-                        return false;
-                    }
-                }
-            }
-
-            // Create a function that will receive data
-            // sent from the server and will update
-            // div section in the same page.
-
-            ajaxRequest.onreadystatechange = function(){
-                if(ajaxRequest.readyState == 4){
-                    var ajaxDisplay = document.getElementById('ajaxDiv');
-//                        if(ajaxRequest.responseText =="success!"){
-
-
-                         //   window.location.href = "http://www.msdn.com";
-                           //ajaxDisplay.innerHTML = ajaxRequest.responseText;
-                        //}
-                        ajaxDisplay.innerHTML = ajaxRequest.responseText;
-
-                }
-            };
-
-            // Now get the value from user and pass it to
-            // server script.
-
-
-            var email = document.getElementById('email').value;
-            var password = document.getElementById('password').value;
-
-            var queryString = "?email=" + email ;
-            queryString +=  "&password=" + password;
-
-            ajaxRequest.open("GET", "ajax-example.php" + queryString, true);
-            ajaxRequest.send(null);
-
-
-        }
-        //-->
-    </script>
-
     <form class="table1" name = 'myForm' action= 'OwnerRegistration.html' method="GET">
 <table>
             <tr><td colspan="2">Owner's Page</td></tr>
@@ -127,11 +70,15 @@ theB&Bhub.com
                 </td>
             </tr>
 
-    <tr><td></td><td><input type = 'button' onclick = 'ajaxFunction()' value = 'Sign In'/></td></tr>
+    <tr><td></td><td><input id="submit" type="button" value="Sign In"></td></tr>
     <tr><td></td><td><input type = 'submit' value = 'Register'/></td></tr>
 
-    <tr><td colspan="2"><div style="color: #ff0006" id = 'ajaxDiv'></div></td></tr>
 
+
+
+
+    <!-- The result of the search will be rendered inside this div -->
+    <tr><td> id="result" style="color: #ff0006"></td></tr>
 </table>
             </form>
 
