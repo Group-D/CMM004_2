@@ -27,7 +27,7 @@ $(document).ready(function(){
                     $("#result").html(result);
                     }
                     else{
-                        alert("That's you signed in, chief!!!!");
+                        alert("That's you signed in, chief!");
 
                         var form = $('<form action="http://bbhubapp.azurewebsites.net/Home.php" method="POST">' +
                             '<input hidden type="text" name="user" value="'+email+'" />' +
