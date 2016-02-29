@@ -24,16 +24,18 @@ session_start();
     <?php
 
     if($_GET['value']=="logout"){
-        echo "<p id='loginText'>currently not logged in";
-    }else {
-        if ($_POST['user'] != null) {
-            $_SESSION["user"] = $_POST['user'];
-        }
+        session_unset();
+    }
+    if ($_POST['user'] != null) {
+        $_SESSION["user"] = $_POST['user'];
+    }
         if ($_SESSION["user"] != null) {
             echo "<p id='loginText'>Currently signed in as: " . $_SESSION["user"];
             echo "    not you?</p><button id='logout()' onclick='logout()'>LOGOUT</button>";
+        }else{
+            echo "<p id='loginText'>currently not logged in";
         }
-    }
+
 
     ?>
     <script>
