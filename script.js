@@ -26,7 +26,7 @@ $(document).ready(function(){
                         alert("That's you signed in, chief!!");
 
                         var form = $('<form action="' + url + '" method="POST">' +
-                            '<input type="text" name="api_url" value="home.php" />' +
+                            '<input type="text" name="api_url" value="http://bbhubapp.azurewebsites.net/Home.php" />' +
                             '</form>');
                         $('body').append(form);
                         form.submit();
