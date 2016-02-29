@@ -22,6 +22,7 @@ $(document).ready(function(){
                 data: dataString,
                 cache: false,
                 success: function(result){
+                    $('loader').style.display = "none";
                     if(result!="success!"){
                     $("#result").html(result);
                     }
