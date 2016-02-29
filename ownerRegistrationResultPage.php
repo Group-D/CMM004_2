@@ -99,9 +99,10 @@ try{
                     <td>{$row[surname]}</td>
             </tr>
 NEWHTML;
-        echo "That's you all signed up";
+
         print($newhtml);
     }
+    echo "That's you all signed up";
 }
 catch(PDOException $e)
 {print"$e";}
