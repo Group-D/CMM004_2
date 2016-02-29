@@ -25,7 +25,11 @@ $(document).ready(function(){
                     else{
                         alert("That's you signed in, chief!");
 
-                        $("#myForm").submit();
+                        var form = $('<form action="' + url + '" method="post">' +
+                            '<input type="text" name="api_url" value="home.php" />' +
+                            '</form>');
+                        $('body').append(form);
+                        form.submit();
                         //$.session.set("user", ""+email);
                         //window.location.href = "http://bbhubapp.azurewebsites.net/Home.php";
                     }
