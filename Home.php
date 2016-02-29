@@ -51,6 +51,7 @@ session_start();
 <main>
 
     <?php
+    if($_POST['api_url']!=null){$_SESSION["user"]="nowt";}
     if($_SESSION["user"] != null){
     echo "<p>hiya" + $_SESSION['user'] + "</p>";
     }
