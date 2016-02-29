@@ -33,6 +33,11 @@ theB&Bhub.com
     }
 
     ?>
+    <script>
+        function logout() {
+            window.location = "http://bbhubapp.azurewebsites.net/home.php/?value=logout";
+        }
+    </script>
 </header>
 
 <div class="nav">
