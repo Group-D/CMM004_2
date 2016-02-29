@@ -22,7 +22,7 @@ $(document).ready(function(){
                 data: dataString,
                 cache: false,
                 success: function(result){
-                    document.getElementById("loader").style.display = "none";
+                    $('loader').css("display","none");
                     if(result!="success!"){
                     $("#result").html(result);
                     }
