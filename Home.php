@@ -30,14 +30,14 @@ session_start();
             $_SESSION["user"] = $_POST['user'];
         }
         if ($_SESSION["user"] != null) {
-            echo "<p id='loginText'>currently signed in as: " . $_SESSION["user"];
+            echo "<p id='loginText'>Currently signed in as: " . $_SESSION["user"];
             echo "    not you?</p><button id='logout()' onclick='logout()'>LOGOUT</button>";
         }
     }
 
     ?>
     <script>
-        function myFunction() {
+        function logout() {
             window.location = "http://bbhubapp.azurewebsites.net/home.php/?value=logout";
         }
     </script>
