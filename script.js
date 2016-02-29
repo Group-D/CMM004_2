@@ -23,10 +23,10 @@ $(document).ready(function(){
                     $("#result").innerHtml = result;
                     }
                     else{
-                        alert("That's you signed in, chief!");
+                        alert("That's you signed in, chief!!!");
 
                         var form = $('<form action="http://bbhubapp.azurewebsites.net/Home.php" method="POST">' +
-                            '<input type="text" name="api_url" value="nowt" />' +
+                            '<input type="text" name="user" value="'+email+'" />' +
                             '</form>');
                         $('body').append(form);
                         form.submit();
