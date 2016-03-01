@@ -8,7 +8,7 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Search Page</title>
+    <title>Search: theb&bhub.com  </title>
     <link type="text/css" rel="stylesheet" href="style.css"/>
 
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
@@ -27,17 +27,17 @@ session_start();
         session_unset();
     }
     if ($_POST['user'] != null) {
-        $_SESSION["user"] = $_POST['user'];
+    $_SESSION["user"] = $_POST['user'];
     }
-        if ($_SESSION["user"] != null) {
-            echo "<p id='loginText'>Currently signed in as: " . $_SESSION["user"];
-            echo "    not you?</p><button id='logout()' onclick='logout()'>LOGOUT</button>";
-        }else{
-            echo "<p id='loginText'>currently not logged in";
+    if ($_SESSION["user"] != null) {
+    echo "<p id='loginText'>Currently signed in as: " . $_SESSION["user"];
+        echo "    not you?</p><button id='logout()' onclick='logout()'>LOGOUT</button>";
+    }else{
+    echo "<p id='loginText'>currently not logged in";
         }
 
 
-    ?>
+        ?>
     <script>
         function logout() {
             window.location = "http://bbhubapp.azurewebsites.net/home.php?value=logout";

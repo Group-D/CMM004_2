@@ -7,7 +7,7 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Owner Registration Page</title>
+    <title>Owner's Page: theb&bhub.com</title>
     <link type="text/css" rel="stylesheet" href="style.css"/>
 
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
